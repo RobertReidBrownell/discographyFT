@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=b565c5dd823f67b9dbf38f10e1a1ecc3)
- * Config saved to config.json and https://gist.github.com/b565c5dd823f67b9dbf38f10e1a1ecc3
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=7a31de31f0014702e00e1a5417d6d4af)
+ * Config saved to config.json and https://gist.github.com/7a31de31f0014702e00e1a5417d6d4af
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -402,7 +402,7 @@ fieldset[disabled] .btn-danger.active {
 .navbar-fixed-bottom {
   border-radius: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 556px) {
   .navbar .navbar-nav .open .dropdown-menu > .active > a,
   .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
