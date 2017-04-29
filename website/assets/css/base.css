@@ -8,8 +8,8 @@ body {
 }
 
  */
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Playfair+Display');
 body{
-
 }
 
 .hvrbox,
@@ -63,8 +63,10 @@ body{
 .hvrbox-text li {
   width: 275px;
 }
+h1,h2{font-family: 'Playfair Display', serif;}
+
 h2{
-  color: white;
+	color: white;
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
@@ -97,9 +99,12 @@ h2{
   background:url(../img/background/crowdLG.jpg)no-repeat fixed;
   background-color: #333;
 }
-.footer {
-  background-color: #f5f5f5;
+.footer {background-color: #f5f5f5;padding-top: 15px;}
+.footer .footerinfo {
+	text-align: center;
+	padding: 3px;
 }
+
 div.bandImage p:first-of-type{
   text-align: center;
   color: white;
