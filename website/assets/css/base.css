@@ -6,17 +6,10 @@ body {
   /* Margin bottom by footer height
   margin-bottom: 80px;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here
-  height: 80px;
-  background-color: #f5f5f5;
-}
-*/ */
+
+ */
 body{
-  background-color: black;
+
 }
 
 .hvrbox,
@@ -29,7 +22,6 @@ body{
 	overflow: hidden;
 	max-width: inherit;
 	height: auto;
-  border: 1px solid #FFF;
   box-shadow: 0 0 30px #FFF;
 }
     .hvrbox img {
@@ -71,9 +63,9 @@ body{
 .hvrbox-text li {
   width: 275px;
 }
-h2.album_title {
+h2{
   color: white;
-  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
@@ -97,4 +89,25 @@ h2.album_title {
     top: -3%;
   }
 
+}
+.bandport {
+  text-align: center;
+}
+#bandpage{
+  background:url(../img/background/crowdLG.jpg)no-repeat fixed;
+  background-color: #333;
+}
+.footer {
+  background-color: #f5f5f5;
+}
+div.bandImage p:first-of-type{
+  text-align: center;
+  color: white;
+}
+div.bandImage a {
+  position: relative;
+  left: 40%;
+}
+#discpage {
+  background-color: #202020;
 }
