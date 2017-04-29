@@ -1086,7 +1086,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color: #000;
 }
 input,
 button,
@@ -3402,6 +3402,8 @@ fieldset[disabled] .btn-danger.focus {
   font-weight: normal;
   color: #337ab7;
   border-radius: 0;
+  font-size: 1.3em;
+  text-align: center;
 }
 .btn-link,
 .btn-link:active,

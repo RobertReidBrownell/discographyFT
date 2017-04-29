@@ -14,61 +14,9 @@ body {
   height: 80px;
   background-color: #f5f5f5;
 }
-*//*
-.album_intro_hover{
-    padding: 0px;
-		position: relative;
-		overflow: hidden;
-		height: 430px;
-    margin: 1em;
-	}
-	.album_intro_hover:hover .caption{
-		opacity: 1;
-		-webkit-transform:translateY(-380px);
-		-moz-transform:translateY(-380px);
-		-ms-transform:translateY(-380px);
-		-o-transform:translateY(-380px);
-    transform: translateY(-380px);
-	}
-	.album_intro_hover img{
-		z-index: 4;
-	}
-	.album_intro_hover .caption{
-		position: absolute;
-		top:380px;
-		-webkit-transition:all 0.3s ease-in-out;
-		-moz-transition:all 0.3s ease-in-out;
-		-o-transition:all 0.3s ease-in-out;
-		-ms-transition:all 0.3s ease-in-out;
-		transition:all 0.3s ease-in-out;
-		width: 100%;
-	}
-	.album_intro_hover .blur{
-		background-color: rgba(0,0,0,0.7);
-		height: 440px;
-		z-index: 5;
-		position: absolute;
-		width: 100%;
-	}
-	.album_intro_hover .caption-text{
-		z-index: 10;
-		color: #fff;
-		position: absolute;
-		height: 500px;
-		text-align: center;
-		width: 100%;
-	}
-div.caption-text h2 {
-  font-size: 1.9em;
-  border-bottom: 2px solid white;
-  padding: 10px;
-  margin: -2px;
-}
-div.caption-text li {
-  font-size: 1.1em;
-  text-align: left;
-} */
+*/ */
 body{
+  background-color: black;
 }
 
 .hvrbox,
@@ -81,6 +29,8 @@ body{
 	overflow: hidden;
 	max-width: inherit;
 	height: auto;
+  border: 1px solid #FFF;
+  box-shadow: 0 0 30px #FFF;
 }
     .hvrbox img {
 	   max-width: 100%;
@@ -102,7 +52,9 @@ body{
 	  /* padding: 15px; */
 	   transition: all 0.4s ease-in-out 0s;
 }
+
     .hvrbox:hover .hvrbox-layer-top,
+    .hvrbox:focus .hvrbox-layer-top,
     .hvrbox.active .hvrbox-layer-top {
 	   opacity: 1;
 }
@@ -118,4 +70,31 @@ body{
 }
 .hvrbox-text li {
   width: 275px;
+}
+h2.album_title {
+  color: white;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.hvrbox-text .btn-link {
+  position: absolute;
+  text-align: center;
+  right: -35%;
+  top: -5%;
+}
+@media only screen and (max-width:500px) {
+  .hvrbox-text .btn-link {
+    right: -16%;
+    top: -3%;
+  }
+  .hvrbox .hvrbox-text {font-size: 13px;}
+}
+@media only screen and (max-width:375px) {
+  .hvrbox-text .btn-link {
+    right: -1%;
+    top: -3%;
+  }
+
 }
