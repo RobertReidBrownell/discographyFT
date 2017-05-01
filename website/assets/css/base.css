@@ -129,7 +129,7 @@ header{
 	background:#333 url(../img/hero_images/newsletterheroLG.jpg) top left / cover no-repeat;
 }
 .originsimg {
-	background: url(../img/hero_images/originsMD.jpg) top left / cover no-repeat;
+	background: url(../img/hero_images/originsMD.jpg) top right / cover no-repeat;
 	height: 175px;
 	margin-bottom: 20px;
 }
