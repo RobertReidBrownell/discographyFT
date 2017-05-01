@@ -43,7 +43,6 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="band.html">Band</a></li>
 				<li><a href="discography.html">Discography</a></li>
-				<li><a href="origins.html">Origins</a></li>
 				<li class="active"><a href="newsletter.html">Newsletter</a></li>
 			</ul>
 		</div><!-- Navbar Container -->
@@ -55,36 +54,35 @@
    <div class="col-md-9">
         <div class="row">
           <div class="col-md-12">
-                <div class="well">
-									<h2>Sign up for our newsletter</h2>
+									<h1 class="newsletter">Sign up for our newsletter</h1>
 									<form id="newsletter" class="form-horizontal" name="newsform" onsubmit="return validateform()">
 								    <fieldset>
-								        <legend>&nbsp;&nbsp;Required fields are followed by *&nbsp;&nbsp;</legend>
-								        	<div class="form-group"><label class="control-label col-md-3">First Name:</label>
-								            <div class="col-md-4"><input class="form-control" name="fname" placeholder="Your first name...">
+								        <legend class="col-md-offset-3 col-sm-offset-3">&nbsp;&nbsp;Required fields are followed by *&nbsp;&nbsp;</legend>
+								        	<div class="form-group"><label class="control-label col-md-3 col-sm-3">First Name:</label>
+								            <div class="col-md-4 col-sm-4"><input class="form-control" name="fname" placeholder="Your first name...">
 								            </div>
 													</div>
-								            <div class="form-group"><label class="control-label col-md-3">Last Name:</label>
-								            <div class="col-md-4"><input class="form-control" name="lname" placeholder="Your last name...">
+								            <div class="form-group"><label class="control-label col-md-3 col-sm-3">Last Name:</label>
+								            <div class="col-md-4 col-sm-4"><input class="form-control" name="lname" placeholder="Your last name...">
 								            </div>
 								           </div>
-								            <div class="form-group"> <label class="control-label col-md-3">Address:</label>
-								                <div class="col-md-7"><input class="form-control" name="address" placeholder="Your address...">
+								            <div class="form-group"> <label class="control-label col-md-3 col-sm-3">Address:</label>
+								                <div class="col-md-7 col-sm-7"><input class="form-control" name="address" placeholder="Your address...">
 								                </div>
 								            </div>
 								            <div class="form-group">
-								                <label class="control-label col-md-3">Address:</label>
-																<div class="col-md-7">
+								                <label class="control-label col-md-3 col-sm-3">Address:</label>
+																<div class="col-md-7 col-sm-7">
 								                    <input class="form-control" name="address2" placeholder="(Optional)">
 								                </div>
 								            </div>
-								            <div class="form-group"><label class="control-label col-md-3">City:</label>
-								                <div class="col-md-4"><input class="form-control" name="city" placeholder="Your city...">
+								            <div class="form-group"><label class="control-label col-md-3 col-sm-3">City:</label>
+								                <div class="col-md-4 col-sm-4"><input class="form-control" name="city" placeholder="Your city...">
 								                </div>
 								            </div>
-								            <div class="group state form-group"><label class="control-label col-md-3" for="state">State:
+								            <div class="group state form-group"><label class="control-label col-md-3 col-sm-3" for="state">State:
 								                </label>
-								                <div class="col-md-4">
+								                <div class="col-md-4 col-sm-4">
 								                    <select id="state" class="form-control">
 								                        <option value="">- Select -</option>
 								                        <option value="AL">Alabama</option>
@@ -140,35 +138,34 @@
 								                    </select>
 								                </div>
 								            </div>
-								            <div class="form-group"><label class="control-label col-md-3">Zip Code:</label>
-								                <div class="col-md-4"><input class="form-control" type="" name="zip" placeholder="Your zip code...">
+								            <div class="form-group"><label class="control-label col-md-3 col-sm-3">Zip Code:</label>
+								                <div class="col-md-4 col-sm-4"><input class="form-control" type="" name="zip" placeholder="Your zip code...">
 								                </div>
 								            </div>
-								            <div class="form-group"><label class="control-label col-md-3">Phone Number:</label>
-								                <div class="col-md-4"><input class="form-control" type="tel" name="phone" placeholder="555-456-2345">
+								            <div class="form-group"><label class="control-label col-md-3 col-sm-3">Phone Number:</label>
+								                <div class="col-md-4 col-sm-4"><input class="form-control" type="tel" name="phone" placeholder="555-456-2345">
 								                </div>
 															</div>
-															<div class="form-group"><label class="control-label col-md-3">Email Address*:</label>
-								                <div class="col-md-4"><input class="form-control" name="email" placeholder="Your email address..." required>
-																	<label class="radio-inline"><input type="radio" name="optradio" required>HTML</label>
-																	<label class="radio-inline"><input type="radio" name="optradio" required>Plain Text</label>
+															<div class="form-group"><label class="control-label col-md-3 col-sm-3">Email Address*:</label>
+								                <div class="col-md-4 col-sm-4"><input class="form-control" name="email" placeholder="Your email address..." required>
+																	<label class="radio-inline"><input type="radio" name="emailtype" required>HTML</label>
+																	<label class="radio-inline"><input type="radio" name="emailtype" required>Plain Text</label>
 								                </div>
 								            </div>
 														<div class="form-group">
-  													<label class="control-label col-md-3" for="comment">Comment:</label>
-														<div class="col-md-4">
+  													<label class="control-label col-md-3 col-sm-3" for="comment">Comment:</label>
+														<div class="col-md-4 col-sm-4">
   													<textarea class="form-control" rows="5" id="comment" placeholder="Any comments you might have."></textarea>
 														</div>
 													</div>
 
 													<div class="checkbox">
-  												<label class="col-md-offset-2">I have read and agree to the terms.&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" required></label>
-												</div><div class="col-md-offset-3"><button type="submit" name="submit" class="submit">Get our Newsletter!</button>
+  												<label class="col-md-offset-3 col-sm-offset-3 termagreement">I have read and agree to the terms.&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="terms" required></label>
+												</div><div class="col-md-offset-3 col-sm-offset-3"><button type="submit" name="submit" class="submit">Get our Newsletter!</button>
 											 </div>
 										</fieldset>
 								</form>
 							</div>
-            </div>
             </div> <!-- row -->
 				<div class="row">
 					   <div class="col-md-12">
@@ -181,14 +178,15 @@
 										<li><a href="http://radio.com/2017/04/10/linkin-parks-new-track-good-goodbye-features-pusha-t-and-stormzy/">radio.com</a></li>
 										<li><a href="https://linkinpark.com/">linkinpark.com</a></li>
 										<li><a href="http://teamrock.com/feature/2015-10-23/linkin-park-you-re-a-nu-metal-boy-band-discuss?ns_type=hidden&ns_campaign=dontmiss&ns_linkname=linkin-park-you-re-a-nu-metal-boy-band-discuss&ns_articleCount=4&ns_articlePosition=1">teamrock.com</a></li>
+										<li><a href="http://www.zastavki.com/eng/Music/wallpaper-34037.htm">zastavki.com</a></li>
+										<li><a href="https://www.theguardian.com/music/2011/jul/07/linkin-park-moscow-interview">theguardian.com</a></li>
 									</ul>
 							</div>
              </div>
           </div>
     </div><!-- col-md-8-->
   <div class="col-md-3">
-        <div class="well">Sidebar Content Here is where the Event dates will go. Either Static or if I have time to make them be
-					pulled with an API.
+        <div class="tourwidget"><a class="bit-widget-initializer" data-artist-name="Linkin Park" data-font=" 'Droid Sans Mono', monospace" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#2F95DE" data-popup-background-color="#000000" data-background-color="rgba(0,0,0,.2)" data-display-limit="7" data-link-text-color="#FFFFFF"></a>
         </div>
     </div>
 	</div> <!-- row -->
@@ -230,5 +228,25 @@
 ================================================== -->
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="https://widget.bandsintown.com/main.min.js"></script>
+<script>
+				function validateform() {
+		var x = document.forms["newsform"]["terms"].checked;
+    var y = document.forms["newsform"]["email"].value;
+		var z = document.forms["newsform"]["emailtype"].checked;
+
+    if (y == "") {
+        alert("Email must be filled out");
+        return false;
+    } else if (x == false) {
+	    alert("You need to agree to the terms");
+				return false;
+    } else if (z == false) {
+			alert("Please select how you would like to be emailed");
+				return false;
+		} else {
+			window.alert("Thank you for signing up!");
+		}
+}</script>
 </body>
 </html>

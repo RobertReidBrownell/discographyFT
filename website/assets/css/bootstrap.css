@@ -1606,9 +1606,9 @@ legend {
   margin-bottom: 20px;
   font-size: 18px;
   line-height: inherit;
-  color: #333;
+  color: #fff;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+/*  border-bottom: 1px solid #e5e5e5; */
 }
 label {
   display: inline-block;
@@ -5265,7 +5265,7 @@ button.close {
   word-spacing: normal;
   word-wrap: normal;
   white-space: normal;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,.95);
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
