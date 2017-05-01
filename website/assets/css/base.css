@@ -103,6 +103,7 @@ h1 {
 	 box-shadow: inset 2px 2px 20px 6px rgba(255, 255, 255, .4), inset -2px -2px 2px 1px rgba(0, 0, 0, .4);
 }
 
+
 h2.album_title,
 h2.bandport{
 	color: #fff;
@@ -127,6 +128,12 @@ header{
 #newsletterheader{
 	background:#333 url(../img/hero_images/newsletterheroLG.jpg) top left / cover no-repeat;
 }
+.originsimg {
+	background: url(../img/hero_images/originsMD.jpg) top left / cover no-repeat;
+	height: 175px;
+	margin-bottom: 20px;
+}
+
 @media (max-width:991px){
 header{height: 250px;}
 #discographyheader{background:#333 url(../img/hero_images/discographyheroMD.jpg) top right / cover no-repeat;}
@@ -198,4 +205,11 @@ div.bandImage a {
 }
 form {
 	border-right: 5px solid #fff;
+}
+.sources {
+	margin-top: 40px;
+}
+.well p{
+	line-height: 160%;
+	margin: 20px;
 }
