@@ -57,7 +57,7 @@
 									<h1 class="newsletter">Sign up for our newsletter</h1>
 									<form id="newsletter" class="form-horizontal" name="newsform" onsubmit="return validateform()">
 								    <fieldset>
-								        <legend class="col-md-offset-4 col-sm-offset-3">Required fields are followed by *</legend>
+								        <legend class="col-md-offset-4 col-sm-offset-3">Required fields are marked with *</legend>
 								        	<div class="form-group"><label class="control-label col-md-3 col-sm-3">First Name:</label>
 								            <div class="col-md-4 col-sm-4"><input class="form-control" name="fname" placeholder="Your first name...">
 								            </div>
@@ -147,21 +147,21 @@
 								                </div>
 															</div>
 															<div class="form-group"><label class="control-label col-md-3 col-sm-3">Email Address*:</label>
-								                <div class="col-md-4 col-sm-4"><input class="form-control" name="email" placeholder="Your email address..." required>
-																	<label class="radio-inline"><input type="radio" name="emailtype" required>HTML</label>
-																	<label class="radio-inline"><input type="radio" name="emailtype" required>Plain Text</label>
-								                </div>
+								                <div class="col-md-4 col-sm-4"><input class="form-control" type="email" name="email" id="email" placeholder="Your email address..." required>
+																	<label class="radio-inline"><input type="radio" name="emailtype" id="emailhtml" required>HTML</label>
+																	<label class="radio-inline"><input type="radio" name="emailtype" id="emailplain" required>Plain Text</label>
+																	</div>
 								            </div>
 														<div class="form-group">
   													<label class="control-label col-md-3 col-sm-3" for="comment">Comment:</label>
-														<div class="col-md-4 col-sm-4">
+														<div class="col-md-4 col-sm-7">
   													<textarea class="form-control" rows="5" id="comment" placeholder="Any comments you might have."></textarea>
 														</div>
 													</div>
 
-													<div class="checkbox">
-  												<label class="col-md-offset-3 col-sm-offset-3 termagreement">I have read and agree to the terms.&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="terms" required></label>
-												</div><div class="col-md-offset-3 col-sm-offset-3"><button type="submit" name="submit" class="submit">Get our Newsletter!</button>
+
+  												<label class="col-md-8 col-md-offset-3  col-sm-8 col-sm-offset-3 termagreement ">I have read and agree to the terms.*&nbsp;<input type="checkbox" class="checkbox-inline" name="terms" id="terms" required></label>
+												<div class="col-md-4 col-md-offset-3 col-sm-4 col-sm-offset-3"><button type="submit" name="submit" id="submit">Get our Newsletter!</button>
 											 </div>
 										</fieldset>
 								</form>
@@ -233,24 +233,26 @@
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/bandsintown.min.js"></script>
-<script>
-				function validateform() {
-		var x = document.forms["newsform"]["terms"].checked;
-    var y = document.forms["newsform"]["email"].value;
-		var z = document.forms["newsform"]["emailtype"].checked;
+<script>function validateform() {
+var w = document.getElementById("emailhtml").checked;
+var x = document.getElementById("terms").checked;
+var y = document.getElementById("email").value;
+var z = document.getElementById("emailplain").checked;
 
-    if (y == "") {
-        alert("Email must be filled out.");
-        return false;
-    } else if (x == false) {
-	    alert("You need to agree to the terms.");
-				return false;
-    } else if (z == false) {
-			alert("Please select what type of email you prefer.");
-				return false;
-		} else {
-			window.alert("Thank you for signing up!");
-		}
+if (y == "") {
+					alert("Email must be filled out.");
+					return false;
+}
+if (z == false && w == false) {
+							alert("Please select what type of email you prefer.");
+							return false;
+}
+if (x == false) {
+					alert("You need to agree to the terms.");
+					return false;
+}
+window.alert("Thank you for signing up!");
+
 }</script>
 </body>
 </html>

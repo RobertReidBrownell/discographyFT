@@ -29,3 +29,32 @@ $('a.external').live('click', function(e){
 });
 
 });
+
+
+  function setSubmit(){
+    var el = document.getElementById("terms");
+    if(el.checked)
+      document.getElementById("submit").disabled = false;
+    else
+     document.getElementById("submit").disabled = true;
+  }
+
+
+				function validateform() {
+		var x = document.getElementById("terms").checked;
+    var y = document.getElementById("email").value;
+		var z = document.forms["newsform"]["emailtype"].checked;
+
+    if (y == "") {
+        alert("Email must be filled out.");
+        return false;
+    } else if (z == false) {
+      alert("Please select what type of email you prefer.");
+				return false;
+    } else if (x == false) {
+			alert("You need to agree to the terms.");
+				return false;
+		} else {
+			window.alert("Thank you for signing up!");
+		}
+}
