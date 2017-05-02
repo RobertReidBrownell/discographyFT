@@ -1,5 +1,5 @@
 $(function() {
-	var mobileScreenTreshold = 1024;
+	var mobileScreenTreshold = 767;
 	$(".hvrbox").click(function(e) {
 		if($(window).width() <= mobileScreenTreshold) {
 			if($(this).hasClass("active")) {
